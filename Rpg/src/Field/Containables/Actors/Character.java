@@ -77,6 +77,17 @@ public class Character extends OnGround{
 	public String toString() {
 		return "[c]";
 	}
+	
+	public void attack(Character c) {
+		int damages = this.getStats().getAttack() - c.getStats().getArmor();
+		
+		if (c.stats.health>damages) {
+			c.stats.health -= damages; // Since armor < attack no matter what, basic attack system			
+		}else {
+			c.stats.health = 0;
+		}
+		System.out.println(this.name + " inflicts " + damages + "! " + c.name + "'s health is now at " + c.stats.health);
+	}
 
 	/*
 	public void attack(Character c) {

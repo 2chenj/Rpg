@@ -13,6 +13,7 @@ public class Fight {
 	public Fight(Character player, Character bot) {
 		this.player = player;
 		this.bot = bot;
+		// this fight function do nothing else than initalise those 2 variables !
 	}
 	
 

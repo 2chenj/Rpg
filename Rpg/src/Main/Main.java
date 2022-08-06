@@ -28,7 +28,7 @@ public class Main {
 			
 			Game game = new Game();
 			wait(1);
-			game.hero.moveDown();
+			game.hero.moveDown(); // when are these called ? 
 			game.hero.moveDown();
 			game.hero.moveDown();
 			game.hero.moveDown();

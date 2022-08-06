@@ -20,7 +20,7 @@ public class Game {
 	
 	public View view;
 	
-	public Game() {
+	public Game() { // @azakira what does this fct do ? 
 		this.readyToDisplay = false;
 		this.view = new View(this);
 		this.hero = new Hero("Kevin", 1, null);
